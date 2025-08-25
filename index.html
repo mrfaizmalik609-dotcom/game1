@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAME</title>
-    <link rel="stylesheet" href="firststyle.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAME</title>
+  <link rel="stylesheet" href="firststyle.css" />
 </head>
 <body>
-    <h1>Rock Paper Scissor</h1>
-    <div class="choices">
-        <div class="choice" id="paper">
-           <img src="images/paper-1.png">
-            </div>
-           <div class="choice" id="rock">
-            <img src="images/rock-1-removebg-preview.png">
-           </div>
-           <div class="choice" id="scissor">
-            <img src="images/scissor-removebg-preview.png">
-           </div>
-        </div>
+  <h1>Rock Paper Scissor</h1>
+
+  <div class="choices">
+    <div class="choice" id="paper">
+      <img src="images/paper-1.png" alt="Paper" />
     </div>
-   <div class="score-section">
-  <div class="scores">
-    <p id="user-score">0</p>
-    <p id="computer-score">0</p>
+    <div class="choice" id="rock">
+      <img src="images/rock-1-removebg-preview.png" alt="Rock" />
+    </div>
+    <div class="choice" id="scissor">
+      <img src="images/scissor-removebg-preview.png" alt="Scissor" />
+    </div>
   </div>
-  <div class="labels">
-    <p>You&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comp</p>
+
+  <div class="score-section">
+    <div class="scores">
+      <p id="user-score">0</p>
+      <p id="computer-score">0</p>
+    </div>
+    <div class="labels">
+      <p>You&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comp</p>
+    </div>
+    <div class="msg-container">
+      <p id="msg">Play your move</p>
+    </div>
   </div>
-  <div class="msg-container">
-    <p id="msg">Play your move</p>
-  </div>
-</div>
-<script src="first.js"></script>
+
+  <!-- JS should load after DOM -->
+  <script src="first.js" defer></script>
 </body>
-</html>s
+</html>
